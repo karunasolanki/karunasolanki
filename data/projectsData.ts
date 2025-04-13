@@ -1,4 +1,5 @@
 interface Project {
+  category: string
   title: string
   description: string
   href?: string
@@ -7,19 +8,26 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
+    category: 'German Transport Services',
+    title: 'Deutsche Bahn V.2',
+    description: `The DB Navigator is an official app by Deutsche Bahn that helps passengers plan and organize train journeys. With an extensive, well-maintained network, Deutsche Bahn offers efficient and reliable transportation across Germany and beyond. The case study provided a design opportunity to enhance the app and improve user experience.`,
+    imgSrc: '/static/images/db-navigator.png',
     href: 'https://www.google.com',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
+    category: 'Master Thesis',
+    title: "Sahyog: An app for Alzheimer's",
+    description: `Improving family caregiving for Alzheimer’s patients in India. Through competitor analysis and user-centered research, I designed Sahyog, an app to empower caregivers with educational resources, situational guidance, and community support. 
+    This project reflects my passion for using UX design to create impactful solutions that address real-world challenges.`,
+    imgSrc: '/static/images/sahyog-app.png',
+    href: '/blog/the-time-machine',
+  },
+  {
+    category: 'Passkeys Authentication',
+    title: 'Phishing Resistant MFA: Passkeys',
+    description: `From reshaping the developer panel to enhancing the complete website, I optimized the user experience for clarity and engagement. 
+    I took the lead in designing four key tools that empower users to integrate and understand passkeys across various platforms.`,
+    imgSrc: '/static/images/passkeys-project.png',
     href: '/blog/the-time-machine',
   },
 ]

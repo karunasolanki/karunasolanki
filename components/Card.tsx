@@ -1,54 +1,32 @@
 import Image from './Image'
 import Link from './Link'
 
-const Card = ({ title, description, imgSrc, href }) => (
-  <div className="md max-w-[544px] p-4 md:w-1/2">
-    <div
-      className={`${
-        imgSrc && 'h-full'
-      } overflow-hidden rounded-md border-2 border-gray-200/60 dark:border-gray-700/60`}
-    >
-      {imgSrc &&
-        (href ? (
-          <Link href={href} aria-label={`Link to ${title}`}>
-            <Image
-              alt={title}
-              src={imgSrc}
-              className="object-cover object-center md:h-36 lg:h-48"
-              width={544}
-              height={306}
-            />
-          </Link>
-        ) : (
-          <Image
-            alt={title}
-            src={imgSrc}
-            className="object-cover object-center md:h-36 lg:h-48"
-            width={544}
-            height={306}
-          />
-        ))}
-      <div className="p-6">
-        <h2 className="mb-3 text-2xl leading-8 font-bold tracking-tight">
-          {href ? (
-            <Link href={href} aria-label={`Link to ${title}`}>
-              {title}
-            </Link>
-          ) : (
-            title
-          )}
-        </h2>
-        <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
-        {href && (
-          <Link
-            href={href}
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 text-base leading-6 font-medium"
-            aria-label={`Link to ${title}`}
-          >
-            Learn more &rarr;
-          </Link>
-        )}
-      </div>
+const Card = ({ title, description, imgSrc, href, category }) => (
+  <div className="flex flex-col items-center overflow-hidden rounded-3xl border border-gray-200 shadow-sm md:flex-row dark:border-gray-700">
+    {/* Image section */}
+    <div className="m-4 h-64 w-full overflow-hidden rounded-2xl border border-gray-100 md:h-80 md:w-1/2 dark:border-gray-900">
+      <Image
+        src={imgSrc}
+        alt={title}
+        width={544}
+        height={306}
+        className="h-full w-full object-cover"
+      />
+    </div>
+
+    {/* Text section */}
+    <div className="w-full p-8 md:w-1/2">
+      <p className="mb-2 text-sm text-gray-500 uppercase">{category}</p>
+      <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">{title}</h2>
+      <p className="mb-6 text-gray-600 dark:text-gray-400">{description}</p>
+      {href && (
+        <a
+          href={href}
+          className="inline-block rounded-full bg-black px-5 py-2 text-sm font-medium text-white transition hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-400"
+        >
+          More details
+        </a>
+      )}
     </div>
   </div>
 )
