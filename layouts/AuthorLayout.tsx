@@ -9,7 +9,7 @@ interface Props {
 }
 
 export default function AuthorLayout({ children, content }: Props) {
-  const { name, avatar, occupation, company, email, twitter, bluesky, linkedin, github } = content
+  const { name, avatar, occupation, company, email, linkedin, github } = content
 
   return (
     <>
@@ -19,7 +19,7 @@ export default function AuthorLayout({ children, content }: Props) {
             Hey, I'm Karuna
           </h1>
           <h4 className="text-lg leading-tight font-semibold tracking-tight text-gray-900 sm:text-xl md:text-2xl dark:text-gray-100">
-            Turning user pain into product gain.
+            Creating aesthetic experiences with easy & smart functionality.
           </h4>
         </div>
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
@@ -40,11 +40,9 @@ export default function AuthorLayout({ children, content }: Props) {
               <SocialIcon kind="mail" href={`mailto:${email}`} />
               <SocialIcon kind="github" href={github} />
               <SocialIcon kind="linkedin" href={linkedin} />
-              <SocialIcon kind="x" href={twitter} />
-              <SocialIcon kind="bluesky" href={bluesky} />
             </div>
           </div>
-          <div className="prose dark:prose-invert max-w-none pt-8 pb-8 xl:col-span-2">
+          <div className="prose dark:prose-invert w-full max-w-none pt-8 pb-8 xl:col-span-2">
             {children}
           </div>
         </div>
