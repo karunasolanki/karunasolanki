@@ -1,7 +1,6 @@
-// Gallery.tsx
 import React from 'react'
 import Image from '@/components/Image'
-import { galleryImages } from '@/data/galleryData'
+import { galleryImages } from '@/data/paletteData'
 import { genPageMetadata } from 'app/seo'
 
 export const metadata = genPageMetadata({ title: 'Palette' })
