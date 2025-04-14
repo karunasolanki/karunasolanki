@@ -1,5 +1,5 @@
 import Image from './Image'
-import Link from './Link'
+import Button from './Button'
 
 const Card = ({ title, description, imgSrc, href, category }) => (
   <div className="flex flex-col items-center overflow-hidden rounded-3xl border border-gray-200 shadow-sm md:flex-row dark:border-gray-700">
@@ -19,14 +19,7 @@ const Card = ({ title, description, imgSrc, href, category }) => (
       <p className="mb-2 text-sm text-gray-500 uppercase">{category}</p>
       <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">{title}</h2>
       <p className="mb-6 text-gray-600 dark:text-gray-400">{description}</p>
-      {href && (
-        <a
-          href={href}
-          className="inline-block rounded-full bg-black px-5 py-2 text-sm font-medium text-white transition hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-400"
-        >
-          More details
-        </a>
-      )}
+      {href && <Button href={href} text="Read more" />}
     </div>
   </div>
 )
