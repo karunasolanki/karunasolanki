@@ -6,12 +6,12 @@ import { Metadata } from 'next'
 
 type Props = {
   params: {
-    slug: string[]
+    slug: string
   }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const slug = params.slug?.[0]
+  const slug = params.slug
   const project = projectDetailsData.find((proj) => proj.slug === slug)
 
   if (!project) {
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default function ProjectPage({ params }: Props) {
-  const slug = params.slug?.[0]
+  const slug = params.slug
   const project = projectDetailsData.find((proj) => proj.slug === slug)
 
   if (!project) {
