@@ -27,7 +27,7 @@ export default function Projects() {
                 title={d.title}
                 description={d.description}
                 imgSrc={d.imgSrc}
-                href={d.href}
+                slug={d.slug}
               />
             ))}
           </div>
