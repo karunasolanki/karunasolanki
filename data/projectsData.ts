@@ -12,7 +12,7 @@ const projectsData: Project[] = [
     title: 'Deutsche Bahn V.2',
     description: `The DB Navigator is an official app by Deutsche Bahn that helps passengers plan and organize train journeys. With an extensive, well-maintained network, Deutsche Bahn offers efficient and reliable transportation across Germany and beyond. The case study provided a design opportunity to enhance the app and improve user experience.`,
     imgSrc: '/static/images/db-navigator.png',
-    slug: 'db-navigator',
+    slug: 'deutsche-bahn-v2',
   },
   {
     category: 'Master Thesis',
