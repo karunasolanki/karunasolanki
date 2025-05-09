@@ -30,6 +30,13 @@ const projectsData: Project[] = [
     imgSrc: '/static/images/passkeys-project.png',
     slug: 'passkeys-authentication',
   },
+  {
+    category: 'Sustainability',
+    title: 'Sustain Feed - A Food Donation App',
+    description: `Connecting surplus food to those in need — Sustain Feed simplifies food donations, empowering individuals and businesses to fight hunger while reducing waste.`,
+    imgSrc: '/static/images/sustain-feed.png',
+    slug: 'sustain-feed',
+  },
 ]
 
 export default projectsData
