@@ -1,7 +1,15 @@
 {
+  "ux-design": 2,
+  "developer-tools": 1,
+  "passkeys": 1,
+  "case-study": 1,
+  "ux-case-study": 1,
+  "alzheimer-care": 1,
+  "mobile-app": 2,
+  "design-thinking": 1,
   "next-js": 1,
   "tailwind": 1,
-  "guide": 2,
+  "guide": 1,
   "feature": 1,
-  "github": 1
+  "social-impact": 1
 }
