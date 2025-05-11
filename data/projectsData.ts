@@ -8,19 +8,19 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    category: 'German Transport Services',
-    title: 'Deutsche Bahn V.2',
-    description: `The DB Navigator is an official app by Deutsche Bahn that helps passengers plan and organize train journeys. With an extensive, well-maintained network, Deutsche Bahn offers efficient and reliable transportation across Germany and beyond. The case study provided a design opportunity to enhance the app and improve user experience.`,
-    imgSrc: '/static/images/db-navigator.png',
-    slug: 'deutsche-bahn-v2',
-  },
-  {
     category: 'Master Thesis',
     title: "Sahyog: An app for Alzheimer's",
     description: `Improving family caregiving for Alzheimer’s patients in India. Through competitor analysis and user-centered research, I designed Sahyog, an app to empower caregivers with educational resources, situational guidance, and community support. 
     This project reflects my passion for using UX design to create impactful solutions that address real-world challenges.`,
     imgSrc: '/static/images/sahyog-app.png',
     slug: 'sahyog',
+  },
+  {
+    category: 'German Transport Services',
+    title: 'Deutsche Bahn V.2',
+    description: `The DB Navigator is an official app by Deutsche Bahn that helps passengers plan and organize train journeys. With an extensive, well-maintained network, Deutsche Bahn offers efficient and reliable transportation across Germany and beyond. The case study provided a design opportunity to enhance the app and improve user experience.`,
+    imgSrc: '/static/images/db-navigator.png',
+    slug: 'deutsche-bahn-v2',
   },
   {
     category: 'Passkeys Authentication',
