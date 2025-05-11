@@ -7,21 +7,38 @@ summary: 'Summary - Deutsche Bahn V.2'
 images: ['/static/images/twitter-card.png']
 ---
 
-# DB Navigator App 2.0 – Case Study
-
-### Crafting your effortless travel experience with Deutsche Bahn
-
-> A UX case study by [Amin, Anagha, Karuna, Surbhi]
+<img
+  src="/static/images/db-introduction.png"
+  alt="Deutsch Bahn Application Version 2.0"
+  style={{
+    display: 'block',
+    margin: '0 auto',
+    width: '300px',
+    height: 'auto',
+  }}
+/>
+<div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+  <h1>DB Navigator App 2.0 – Case Study</h1>
+  <h3 style={{ marginTop: '0.5rem' }}>
+    Crafting your effortless travel experience with Deutsche Bahn
+  </h3>
+  <p style={{ fontStyle: 'italic', color: '#555' }}>
+    From delays to delight: Enhancing the Deutsche Bahn experience.
+  </p>
+</div>
 
 ---
 
-## 🚆 Problem Statement
+## Problem Statement
 
-The **DB Navigator** is Deutsche Bahn’s official mobile app. While DB’s transport network is expansive and reliable, its app lacked the same seamlessness. Our goal? Elevate the user experience to meet the standards of Germany’s trusted rail network.
+The **DB Navigator** is Deutsche Bahn’s official mobile app designed to assist passengers in planning and organizing their train journeys. Compared to nearby nations, Deutsche Bahn operates an extensive and well-maintained rail network, providing eﬃcient
+and reliable transportation services across Germany and beyond. While DB’s transport network is expensive and reliable, its app lacked the same seamlessness.
 
 ---
 
-## 🎯 Objective
+## Objective
+
+Our goal? Elevate the user experience to meet the standards of Germany’s trusted rail network.
 
 - Improve accessibility and ease of navigation
 - Introduce new features like meal addition and live train tracking
@@ -29,7 +46,7 @@ The **DB Navigator** is Deutsche Bahn’s official mobile app. While DB’s tran
 
 ---
 
-## 🧠 Design Thinking Process
+## Design Thinking Process
 
 We followed a structured **Design Thinking** process:
 
@@ -38,27 +55,27 @@ We followed a structured **Design Thinking** process:
 3. **Ideate** – Generate potential design solutions
 4. **Prototype** – Build low-fidelity interfaces
 5. **Test** – Gather user feedback
-6. **Iterate** – Refine based on testing
+6. **Assess** – Refine based on testing
+
+![Design Thinking Process](/static/images/design-thinking-process.png)
 
 ---
 
-## 🧍‍♀️ User Persona
+## User Persona
 
 **Commuters & occasional travelers** who rely on the app for quick bookings and tracking loved ones’ journeys.
 
----
-
-## 😫 Pain Points
-
-- Poor ticket access navigation
-- Complex seat selection
-- Login required for basic access
-- No meal or live train status features
-- No real-time agent support
+![User Persona](/static/images/db-persona.png)
 
 ---
 
-## 💡 Solution
+## Pain Points
+
+![Pain Points](/static/images/db-pain-points.png)
+
+---
+
+## Proposed Design Solution
 
 - Clearer navigation structure
 - Optional login for browsing and booking
@@ -68,48 +85,39 @@ We followed a structured **Design Thinking** process:
 
 ---
 
-## 🧭 Information Architecture
+## Information Architecture
 
 We restructured the app to simplify user flows:
 
-- Home
-- Book Tickets → Select Train → Seat → Add Meal → Payment
-- Your Journeys
-- Live Status
-- Contact Support → Connect to Agent
-- Saved Tickets
+![Information Architecture](/static/images/db-information-architecture.png)
 
 ---
 
-## 🎨 Visual Language
+## Visual Language
 
-- **Color palette** inspired by DB’s bold red
-- **Typography** for readability across devices
-- **Iconography** consistent with iOS & Android guidelines
-- **Grid System**: 4-column structure for alignment
+<img
+  src="/static/images/db-visual-identity.png"
+  alt="Deutsch Bahn Visual Identity"
+  style={{
+    display: 'block',
+    margin: '0 auto',
+    width: '800px',
+    height: 'auto',
+  }}
+/>
 
 > 📎 UI Kits used:
 
-- [Android 13 UI Kit](<https://www.figma.com/file/xEuwYvG4KvYS1fIbZ8JJft/Material-You-%26-Android-13-(Community)>)
-- [iOS 17 UI Kit](https://www.figma.com/file/7b6pYH0ruPmVIf554ycmK/Apple-Design-Resources-%E2%80%93-iOS-17)
+- [Android 13 UI Kit](<https://www.figma.com/file/xEuwYvG4KvYS1fIbZ8JJft/Material-You-%26-Android-13-(Community)?type=design&node-id=6052%3A19417&mode=design&t=gvewejCjicMUMcXD-1>)
+- [iOS 17 UI Kit](<https://www.figma.com/file/7b6pYH0ruPmVIf5H54ycmK/Apple-Design-Resources-%E2%80%93-iOS-17-and-iPadOS-17-(Community)?type=design&node-id=29-63928&mode=design&t=Kseh7dBQnNmpfAUT-0>)
 
 ---
 
-## 🧪 Lo-Fi Prototypes & Testing
+## Lo-Fi Prototypes & Testing
 
-We explored **three major flows**:
+We undertook the creation of Low-fidelity prototypes to establish a framework for a user interface. By using Low-fidelity prototypes, we were able to facilitate early stage discussions and implement the feedback after usability testings.
 
-### 1. Ticket Booking
-
-Clear steps from train selection to payment.
-
-### 2. Train Live Status
-
-Track and share train updates in real-time.
-
-### 3. Agent Support
-
-Instant messaging for help regarding bookings.
+![DB Low-fidelity prototype](/static/images/db-low-fidelity.png)
 
 ### UT1 Findings:
 
@@ -117,46 +125,29 @@ Instant messaging for help regarding bookings.
 - Seat selection required too much scrolling
 - Login felt unnecessary
 
+![DB Low-fidelity prototype](/static/images/db-ut-1.png)
+
 **Changes Made:**
 
 - Simplified login flow
 - Redesigned seat selection
 - Optional login during booking
 
----
+## Final UI Designs
 
-## 📱 Final UI Designs
+Here the new user will get an overview of the DB app. Designing with an aim of solving the pain points and user needs. Allowing the design to be inclusive, accessible and user-centric.
 
-### ✨ Onboarding Screens
-
-Help users quickly understand app value.
-
-### 🎟️ Booking Flow
-
-Simple and intuitive journey from search to confirmation.
-
-### 🍱 Meal Addition
-
-New feature to add meals while booking.
-
-### 📡 Live Train Status
-
-Live updates and sharing options for loved ones.
-
-### 🤝 Agent Support
-
-Quickly connect with a real human when needed.
+![DB Low-fidelity prototype](/static/images/db-main-ui-screens.png)
 
 ---
 
-## 🔗 Prototypes
+## Prototypes
 
-- **Android Prototype:** [View Android Flow](https://shorturl.at/wHK48)
 - **iOS Prototype:** [View iOS Flow](https://www.figma.com/proto/wkt9XxmMVQjpoYGWhaRGdp/DB-Navigator-App?type=design&node-id=311-10010)
 
 ---
 
-## 🚀 Conclusion
+## Conclusion
 
 > “Discover a new era of travel with DB 2.0 – where simplicity meets excitement.”
 
