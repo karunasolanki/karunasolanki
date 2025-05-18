@@ -14,7 +14,7 @@ export default function Projects() {
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             Here you'll find projects that showcase my design process, thinking, and execution. Some
-            recent work is protected under NDA and can be shared upon request.
+            recent work is protected under NDA and cannot be presented or shared.
             {/* Showcase your projects with a hero image (16 x 9) */}
           </p>
         </div>

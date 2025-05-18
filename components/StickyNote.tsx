@@ -14,9 +14,12 @@ export const StickyNote = ({
   rotate = 'rotate-0',
 }: StickyNoteProps) => {
   return (
-    <div className={`transform rounded-lg p-4 shadow-lg ${rotate} ${color} ${darkColor}`}>
-      {/* TAPE – top-left */}
-      <div className="absolute -top-4 -left-2 z-10 h-8 w-8 rotate-[-12deg] rounded-sm bg-blue-300 shadow-md dark:bg-blue-400"></div>
+    <div
+      className={`relative transform rounded-lg p-6 shadow-lg ${rotate} ${color} ${darkColor} /* hover effects */ transition-transform duration-200 ease-out hover:-translate-y-1 hover:scale-105 hover:rotate-2`}
+    >
+      {/* PIN */}
+      <span className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 text-xl">📌</span>
+
       <h2 className="mb-2 text-xl font-bold text-gray-800 dark:text-gray-100">{title}</h2>
       <div className="flex flex-wrap gap-2">
         {skills.map((skill, idx) => (
