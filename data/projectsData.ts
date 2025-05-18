@@ -23,6 +23,20 @@ const projectsData: Project[] = [
     slug: 'deutsche-bahn-v2',
   },
   {
+    category: 'Sustainability',
+    title: 'Sustain Feed - A Food Donation App',
+    description: `Connecting surplus food to those in need — Sustain Feed simplifies food donations, empowering individuals and businesses to fight hunger while reducing waste.`,
+    imgSrc: '/static/images/sustain-feed.png',
+    slug: 'sustain-feed',
+  },
+  {
+    category: 'Web Design',
+    title: 'Kiva: Home Renovation Simplified',
+    description: `A streamlined platform to design, plan and build - all in one place`,
+    imgSrc: '/static/images/kiva.png',
+    slug: 'kiva',
+  },
+  {
     category: 'Passkeys Authentication',
     title: 'Phishing Resistant MFA: Passkeys',
     description: `From reshaping the developer panel to enhancing the complete website, I optimized the user experience for clarity and engagement. 
@@ -31,11 +45,11 @@ const projectsData: Project[] = [
     slug: 'passkeys-authentication',
   },
   {
-    category: 'Sustainability',
-    title: 'Sustain Feed - A Food Donation App',
-    description: `Connecting surplus food to those in need — Sustain Feed simplifies food donations, empowering individuals and businesses to fight hunger while reducing waste.`,
-    imgSrc: '/static/images/sustain-feed.png',
-    slug: 'sustain-feed',
+    category: 'Visual Identity',
+    title: 'Event Branding & Collateral',
+    description: `Crafting the visual identity and on-site experience for tech conferences and seminars`,
+    imgSrc: '/static/images/set-design.png',
+    slug: 'event-branding',
   },
 ]
 
