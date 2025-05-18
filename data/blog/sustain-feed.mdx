@@ -1,10 +1,8 @@
 ---
 title: 'Sustain Feed - Fighting Food Waste with Technology'
-date: '2024-07-25'
 tags: ['UX Design', 'Mobile App', 'Social Impact']
 draft: false
 summary: 'A case study on designing Sustain Feed, an app to connect restaurants with NGOs to redistribute surplus food.'
-images: ['/static/images/twitter-card.png']
 ---
 
 import Video from '@/components/Video'
@@ -19,7 +17,7 @@ import Video from '@/components/Video'
     height: 'auto',
   }}
 />
-<div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+<div style={{ textAlign: 'center', marginBottom: '2rem', marginTop: '2rem' }}>
   <h1>Sustain Feed - Fighting Food Waste with Technology</h1>
   <h3 style={{ marginTop: '0.5rem' }}>
     Nourish minds, Donate today. Turning excess into breakfast for every child!
@@ -45,7 +43,7 @@ import Video from '@/components/Video'
 
 Numerous public schools in under developed village areas of Bavaria (Germany) have statistics of children who come to school without having breakfast and do not prefer to have lunch/breakfast in schools because of the expenses.
 
-Thereafter, many senior citizens in Germany rely on **Tafel** for groceries, as their pensions are insufficient due to rising prices caused by COVID-19, war, and political instability. Volunteers who collect food donations often face inconsistent support-some stores donate ethically, while others treat them like waste handlers.
+Thereafter, many volunteers who collect food donations often face inconsistent support-some stores donate ethically, while others treat them like waste handlers.
 
 Cultural and religious sensitivities, like ensuring pork-free items for Muslim recipients, add to distribution challenges. Additionally, while some beneficiaries, like one elderly woman who cooks and shares meals, foster a sense of community, such positive actions are not yet systematized.
 
@@ -91,19 +89,34 @@ I conducted interviews with:
 
 ## Design Highlights
 
-### Easy Listing Creation
+### 1. Claim & Track Donations
 
-Donors can quickly list surplus food by uploading photos, quantity, and pickup time.
+Donors can quickly list surplus food by uploading photos, quantity, and pickup time. Designed for businesses and individuals, this flow makes it easy to list surplus food, choose pickup windows, and generate tax-deductible donation receipts.
+Clear prompts ensure food safety checks are followed, and donors can see the impact of their contributions in real time.
 
-<Video media_path="/static/videos/sustain-feed-video.mp4" />
+![Donation Flow](/static/images/sustain-feed-donationflow.png)
 
-### 🔄 Claim & Track Donations
+### 2. Volunteer Coordination
 
-NGOs can browse listings, claim them, and track pickup status.
+A streamlined experience for volunteers to register, receive pickup tasks, and track deliveries.
+The flow ensures clarity on allergy considerations (e.g., pork restrictions), allows location-based matching with food donors, and provides rewards tracking for each successful contribution.
 
-### 🚚 Volunteer Coordination
+![Volunteer Flow](/static/images/sustain-feed-volunteerflow.png)
 
-Volunteers get notified about routes and timing, with in-app maps.
+### 3. Rewards and Incentives for Donations
+
+To motivate consistent participation, Sustain Feed offers incentives for both donors and volunteers.
+Stores receive certified donation receipts that can be used for tax refunds, while volunteers can earn recognition badges, certificates, and community perks based on their contributions.
+This fosters a stronger sense of responsibility and appreciation within the food-sharing ecosystem.
+
+![Rewards and incentives Flow](/static/images/sustain-feed-finance.png)
+
+### 4. Food Safety and Nutrition Check
+
+To ensure that redistributed food is both safe and healthy, the app includes dedicated screens where volunteers can quickly log expiry dates, packaging conditions, and allergen information.
+These checks help maintain food quality standards while also considering dietary needs, such as vegetarian or pork-free options-crucial for supporting diverse communities.
+
+![Food Safety and Nutrition Check Flow](/static/images/sustain-feed-food-safety.png)
 
 ---
 
@@ -131,6 +144,10 @@ Volunteers get notified about routes and timing, with in-app maps.
 
 ---
 
-[View Figma Prototype](https://www.figma.com/)
+## Final Prototype Sneak Peak
+
+<Video media_path="/static/videos/sustain-feed-video.mp4" className="w-full" />
+
+[View Figma Prototype](https://shorturl.at/QWgZV)
 
 ---
