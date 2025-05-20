@@ -50,33 +50,16 @@ export default function AuthorLayout({ children, content }: Props) {
           </div>
         </div>
         {/* Right Column */}
-        <div className="prose dark:prose-invert max-w-none text-center xl:col-span-2 xl:text-left">
+        {/* Right Column */}
+        <div className="flex max-w-none flex-col self-center xl:col-span-2 xl:items-start xl:pr-6 xl:text-left">
           {children}
+          {/* Buttons below MDX content */}
+          <div className="not-prose mt-6 flex justify-center gap-3 xl:justify-start">
+            <Button href="/projects" text="Explore my projects" variant="primary" target="_blank" />
+            <Button href="/resume.pdf" text="Grab my resume" variant="secondary" target="_blank" />
+          </div>
         </div>
       </div>
-      {/* Action Items: Resume and project buttons */}
-      <div className="mt-8 flex flex-col items-center gap-6 text-center sm:flex-row sm:justify-center">
-        <Link
-          href="/projects"
-          className="group relative rounded-xl bg-gray-200 px-8 py-4 shadow-lg transition hover:scale-105 hover:shadow-2xl dark:bg-gray-800 dark:shadow-xl dark:hover:bg-indigo-600 dark:hover:shadow-2xl"
-        >
-          <h3 className="text-lg font-semibold text-black dark:text-white">Explore My Projects</h3>
-          <p className="text-sm text-gray-500 group-hover:dark:text-white">
-            See how I solve problems visually
-          </p>
-        </Link>
-        <Link
-          href="/resume.pdf"
-          target="blank"
-          className="group relative rounded-xl bg-gray-200 px-8 py-4 shadow-lg transition hover:scale-105 hover:shadow-2xl dark:bg-gray-800 dark:shadow-xl dark:hover:bg-indigo-600 dark:hover:shadow-2xl"
-        >
-          <h3 className="text-lg font-semibold text-black dark:text-white">Grab My Resume</h3>
-          <p className="text-sm text-gray-500 group-hover:dark:text-white">
-            Get to know my background
-          </p>
-        </Link>
-      </div>
-
       {/* Key skills section */}
       <div className="flex flex-col">
         <h2 className="mt-8 items-center pt-8 text-center text-3xl leading-8 font-bold tracking-tight">
