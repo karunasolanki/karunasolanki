@@ -19,7 +19,7 @@ export default function AuthorLayout({ children, content }: Props) {
   return (
     <>
       {/* Hero Section */}
-      <div className="pt-10 pb-14 text-center">
+      <div className="pb-14 text-center">
         <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl md:text-5xl dark:text-gray-100">
           Hey there, I'm a designer.
         </h1>
@@ -48,13 +48,17 @@ export default function AuthorLayout({ children, content }: Props) {
             <SocialIcon kind="linkedin" href={linkedin} />
             <SocialIcon kind="github" href={github} />
           </div>
+          {/* Buttons for mobile (below avatar) */}
+          <div className="mt-4 flex gap-3 xl:hidden">
+            <Button href="/projects" text="Explore my projects" variant="primary" target="_blank" />
+            <Button href="/resume.pdf" text="Grab my resume" variant="secondary" target="_blank" />
+          </div>
         </div>
         {/* Right Column */}
-        {/* Right Column */}
-        <div className="flex max-w-none flex-col self-center xl:col-span-2 xl:items-start xl:pr-6 xl:text-left">
+        <div className="flex max-w-none flex-col self-center xl:col-span-2 xl:items-start xl:text-left">
           {children}
-          {/* Buttons below MDX content */}
-          <div className="not-prose mt-6 flex justify-center gap-3 xl:justify-start">
+          {/* Buttons for desktop (below content) */}
+          <div className="not-prose mt-6 hidden justify-center gap-3 xl:flex xl:justify-start">
             <Button href="/projects" text="Explore my projects" variant="primary" target="_blank" />
             <Button href="/resume.pdf" text="Grab my resume" variant="secondary" target="_blank" />
           </div>
