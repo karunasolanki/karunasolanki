@@ -5,9 +5,10 @@ interface ButtonProps {
   text: string
   className?: string
   variant?: 'primary' | 'secondary'
+  target?: '_blank' | '_self'
 }
 
-const Button = ({ href, text, className = '', variant = 'primary' }: ButtonProps) => {
+const Button = ({ href, text, className = '', variant = 'primary', target }: ButtonProps) => {
   const baseClasses = 'inline-block rounded-full px-5 py-2 text-sm font-medium transition'
   const variants = {
     primary:
@@ -17,7 +18,11 @@ const Button = ({ href, text, className = '', variant = 'primary' }: ButtonProps
   }
 
   return (
-    <Link href={href} className={`${baseClasses} ${variants[variant]} ${className}`}>
+    <Link
+      href={href}
+      className={`${baseClasses} ${variants[variant]} ${className}`}
+      target={target}
+    >
       {text}
     </Link>
   )
