@@ -19,7 +19,7 @@ export default function AuthorLayout({ children, content }: Props) {
   return (
     <>
       {/* Hero Section */}
-      <div className="pb-14 text-center">
+      <div className="pb-8 text-center">
         <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl md:text-5xl dark:text-gray-100">
           Hey there, I'm a designer.
         </h1>
