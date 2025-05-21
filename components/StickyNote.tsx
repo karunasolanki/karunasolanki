@@ -18,8 +18,7 @@ export const StickyNote = ({
       className={`relative transform rounded-lg p-6 shadow-lg ${rotate} ${color} ${darkColor} /* hover effects */ transition-transform duration-200 ease-out hover:-translate-y-1 hover:scale-105 hover:rotate-2`}
     >
       {/* PIN */}
-      <span className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 text-xl">📌</span>
-
+      <span className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 text-2xl">📌</span>
       <h2 className="mb-2 text-xl font-bold text-gray-800 dark:text-gray-100">{title}</h2>
       <div className="flex flex-wrap gap-2">
         {skills.map((skill, idx) => (
