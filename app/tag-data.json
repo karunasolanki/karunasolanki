@@ -1,8 +1,4 @@
 {
-  "ux-design": 3,
-  "developer-tools": 1,
-  "passkeys": 1,
-  "case-study": 1,
   "next-js": 1,
   "tailwind": 1,
   "guide": 1,
@@ -10,11 +6,15 @@
   "visual-design": 1,
   "branding": 1,
   "conference-design": 1,
+  "ux-design": 3,
   "web-design": 1,
   "service-design": 1,
   "ux-case-study": 1,
   "alzheimer-care": 1,
   "mobile-app": 2,
   "design-thinking": 1,
-  "social-impact": 1
+  "social-impact": 1,
+  "developer-tools": 1,
+  "passkeys": 1,
+  "case-study": 1
 }
