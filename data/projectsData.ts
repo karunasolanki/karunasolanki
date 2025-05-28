@@ -23,6 +23,14 @@ const projectsData: Project[] = [
     slug: 'deutsche-bahn-v2',
   },
   {
+    category: 'Passkeys Authentication',
+    title: 'Phishing Resistant MFA: Passkeys',
+    description: `From reshaping the developer panel to enhancing the complete website, I optimized the user experience for clarity and engagement. 
+    I took the lead in designing four key tools that empower users to integrate and understand passkeys across various platforms.`,
+    imgSrc: '/static/images/passkeys-project.png',
+    slug: 'passkeys-authentication',
+  },
+  {
     category: 'Sustainability',
     title: 'Sustain Feed - A Food Donation App',
     description: `Connecting surplus food to those in need — Sustain Feed simplifies food donations, empowering individuals and businesses to fight hunger while reducing waste.`,
@@ -35,14 +43,6 @@ const projectsData: Project[] = [
     description: `A streamlined platform to design, plan and build - all in one place`,
     imgSrc: '/static/images/kiva.png',
     slug: 'kiva',
-  },
-  {
-    category: 'Passkeys Authentication',
-    title: 'Phishing Resistant MFA: Passkeys',
-    description: `From reshaping the developer panel to enhancing the complete website, I optimized the user experience for clarity and engagement. 
-    I took the lead in designing four key tools that empower users to integrate and understand passkeys across various platforms.`,
-    imgSrc: '/static/images/passkeys-project.png',
-    slug: 'passkeys-authentication',
   },
   {
     category: 'Visual Identity',
