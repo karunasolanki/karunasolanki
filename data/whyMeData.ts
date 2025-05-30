@@ -16,6 +16,6 @@ export const whyMeData = [
   },
   {
     title: 'Problem-Solving Skills',
-    tagline: 'From research to prototypes - I stay hands-on all the way.s',
+    tagline: 'From research to prototypes - I stay hands-on all the ways.',
   },
 ]
