@@ -12,7 +12,7 @@ export const whyMeData = [
   },
   {
     title: 'Real Experience',
-    tagline: '3+ years designing meaningful products that make a difference.',
+    tagline: '4+ years designing meaningful products that make a difference.',
   },
   {
     title: 'Problem-Solving Skills',
