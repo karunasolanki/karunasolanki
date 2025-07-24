@@ -2,7 +2,7 @@ import { ReactNode } from 'react'
 import { CoreContent } from 'pliny/utils/contentlayer'
 import type { Blog, Authors } from 'contentlayer/generated'
 import Link from '@/components/Link'
-import PageTitle from '@/components/PageTitle'
+import { ProjectPageTitle } from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
@@ -49,7 +49,7 @@ export default function ProjectLayout({ content, children }: LayoutProps) {
           >
             {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
           </time>
-          <PageTitle>{title}</PageTitle>
+          <ProjectPageTitle>{title}</ProjectPageTitle>
         </header>
 
         {/* Article Content */}
