@@ -4,7 +4,7 @@ import { CoreContent } from 'pliny/utils/contentlayer'
 import type { Blog } from 'contentlayer/generated'
 import Comments from '@/components/Comments'
 import Link from '@/components/Link'
-import PageTitle from '@/components/PageTitle'
+import { ProjectPageTitle } from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
@@ -35,7 +35,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                 </div>
               </dl>
               <div>
-                <PageTitle>{title}</PageTitle>
+                <ProjectPageTitle>{title}</ProjectPageTitle>
               </div>
             </div>
           </header>

@@ -5,6 +5,7 @@ import Link from '@/components/Link'
 import SectionContainer from '@/components/SectionContainer'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
+import { BlogPageTitle } from '@/components/PageTitle'
 
 const editUrl = (path: string) => `${siteMetadata.siteRepo}/blob/main/data/${path}`
 
@@ -36,9 +37,7 @@ export default function PostLayout({ content, children }: LayoutProps) {
         {/* Article Header */}
         <header className="rounded-2xl border border-purple-300/20 bg-purple-100/30 p-4 text-center shadow-md backdrop-blur-sm transition-all dark:bg-purple-900/10">
           {/* Post Title */}
-          <p className="text-3xl leading-tight font-bold tracking-tight text-gray-800 md:text-4xl dark:text-purple-100">
-            {title}
-          </p>
+          <BlogPageTitle>{title}</BlogPageTitle>
           <p className="font-semibold text-purple-700 dark:text-purple-300">- Karuna Solanki</p>
         </header>
 

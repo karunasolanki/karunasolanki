@@ -38,7 +38,7 @@ export default function DefinitionBox({ title, children, color = 'green' }: Defi
   return (
     <div className={`my-4 rounded-md ${colors.border} ${colors.bg} px-3 py-2 shadow-sm`}>
       <h3 className={`mb-1 text-lg font-semibold ${colors.text}`}>{title}</h3>
-      <p className={`${colors.text}`}>{children}</p>
+      <div className={`${colors.text}`}>{children}</div>
     </div>
   )
 }
