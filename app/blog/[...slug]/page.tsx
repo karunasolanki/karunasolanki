@@ -5,19 +5,19 @@ import PageTitle from '@/components/PageTitle'
 import { components } from '@/components/MDXComponents'
 import { MDXLayoutRenderer } from 'pliny/mdx-components'
 import { sortPosts, coreContent, allCoreContent } from 'pliny/utils/contentlayer'
-import { allProjects, allAuthors } from 'contentlayer/generated'
-import type { Authors, Project } from 'contentlayer/generated'
+import { allBlogs, allAuthors } from 'contentlayer/generated'
+import type { Authors, Blog } from 'contentlayer/generated'
 import PostSimple from '@/layouts/PostSimple'
-import ProjectLayout from '@/layouts/ProjectLayout'
+import PostLayout from '@/layouts/PostLayout'
 import PostBanner from '@/layouts/_PostBanner'
 import { Metadata } from 'next'
 import siteMetadata from '@/data/siteMetadata'
 import { notFound } from 'next/navigation'
 
-const defaultLayout = 'ProjectLayout'
+const defaultLayout = 'PostLayout'
 const layouts = {
   PostSimple,
-  ProjectLayout,
+  PostLayout,
   PostBanner,
 }
 
@@ -26,7 +26,7 @@ export async function generateMetadata(props: {
 }): Promise<Metadata | undefined> {
   const params = await props.params
   const slug = decodeURI(params.slug.join('/'))
-  const post = allProjects.find((p) => p.slug === slug)
+  const post = allBlogs.find((p) => p.slug === slug)
   const authorList = post?.authors || ['default']
   const authorDetails = authorList.map((author) => {
     const authorResults = allAuthors.find((p) => p.slug === author)
@@ -50,10 +50,8 @@ export async function generateMetadata(props: {
 
   return {
     title: post.title,
-    description: post.summary,
     openGraph: {
       title: post.title,
-      description: post.summary,
       siteName: siteMetadata.title,
       locale: 'en_US',
       type: 'article',
@@ -65,21 +63,20 @@ export async function generateMetadata(props: {
     twitter: {
       card: 'summary_large_image',
       title: post.title,
-      description: post.summary,
       images: imageList,
     },
   }
 }
 
 export const generateStaticParams = async () => {
-  return allProjects.map((p) => ({ slug: p.slug.split('/').map((name) => decodeURI(name)) }))
+  return allBlogs.map((p) => ({ slug: p.slug.split('/').map((name) => decodeURI(name)) }))
 }
 
 export default async function Page(props: { params: Promise<{ slug: string[] }> }) {
   const params = await props.params
   const slug = decodeURI(params.slug.join('/'))
   // Filter out drafts in production
-  const sortedCoreContents = allCoreContent(sortPosts(allProjects))
+  const sortedCoreContents = allCoreContent(sortPosts(allBlogs))
   const postIndex = sortedCoreContents.findIndex((p) => p.slug === slug)
   if (postIndex === -1) {
     return notFound()
@@ -87,7 +84,7 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
 
   const prev = sortedCoreContents[postIndex + 1]
   const next = sortedCoreContents[postIndex - 1]
-  const post = allProjects.find((p) => p.slug === slug) as Project
+  const post = allBlogs.find((p) => p.slug === slug) as Blog
   const authorList = post?.authors || ['default']
   const authorDetails = authorList.map((author) => {
     const authorResults = allAuthors.find((p) => p.slug === author)
