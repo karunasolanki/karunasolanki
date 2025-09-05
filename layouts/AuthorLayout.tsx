@@ -51,7 +51,7 @@ export default function AuthorLayout({ children, content }: Props) {
           {/* Buttons for mobile (below avatar) */}
           <div className="mt-4 flex gap-3 xl:hidden">
             <Button href="/projects" text="Explore my projects" variant="primary" target="_blank" />
-            <Button href="/resume.pdf" text="Grab my resume" variant="secondary" target="_blank" />
+            {/* <Button href="/resume.pdf" text="Grab my resume" variant="secondary" target="_blank" /> */}
           </div>
         </div>
         {/* Right Column */}
@@ -60,7 +60,7 @@ export default function AuthorLayout({ children, content }: Props) {
           {/* Buttons for desktop (below content) */}
           <div className="not-prose mt-6 hidden justify-center gap-3 xl:flex xl:justify-start">
             <Button href="/projects" text="Explore my projects" variant="primary" target="_blank" />
-            <Button href="/resume.pdf" text="Grab my resume" variant="secondary" target="_blank" />
+            {/* <Button href="/resume.pdf" text="Grab my resume" variant="secondary" target="_blank" /> */}
           </div>
         </div>
       </div>
