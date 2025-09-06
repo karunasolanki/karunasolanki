@@ -21,11 +21,8 @@ export default function AuthorLayout({ children, content }: Props) {
       {/* Hero Section */}
       <div className="pb-8 text-center">
         <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl md:text-5xl dark:text-gray-100">
-          Hey there, I'm a designer.
+          Designing for people x Coding sometimes x Exploring AI.
         </h1>
-        <h4 className="mt-4 text-lg font-semibold tracking-tight text-gray-700 sm:text-xl md:text-2xl dark:text-gray-300">
-          Creating aesthetic experiences with smart & accessible functionality.
-        </h4>
       </div>
       {/* 2-Column Section */}
       <div className="grid grid-cols-1 items-start gap-8 xl:grid-cols-3">

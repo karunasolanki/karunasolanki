@@ -12,10 +12,7 @@ export default function Footer() {
           <SocialIcon kind="github" href={siteMetadata.github} size={6} />
         </div>
         <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
-          <p>Designed & coded with love by</p>
-          <div>{siteMetadata.author}</div>
-          <div>{` • `}</div>
-          <div>{`© ${new Date().getFullYear()}`}</div>
+          <p>Designed & coded with love by Karuna Solanki • © {new Date().getFullYear()}</p>
         </div>
       </div>
     </footer>

@@ -6,9 +6,14 @@
 
 /* Core theme configuration */
 @theme {
-  /* Font families */
-  --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  /* Headings: Space Grotesk */
+  --font-heading: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+
+  /* Body: Inter (or fallback if you change later) */
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Default */
+  --font-sans: var(--font-body);
 
   /* Colors */
   /* Copied from https://tailwindcss.com/docs/theme#default-theme-variable-reference */
@@ -75,6 +80,12 @@
     outline: 2px solid;
     border-radius: var(--radius-sm);
     outline-color: var(--color-primary-500);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+  body, p, li, span, a {
+    font-family: var(--font-body);
   }
 }
 
