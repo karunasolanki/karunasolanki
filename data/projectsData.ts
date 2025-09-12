@@ -8,12 +8,12 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    category: 'Master Thesis',
-    title: "Sahyog: An app for Alzheimer's",
-    description: `Improving family caregiving for Alzheimer’s patients in India. Through competitor analysis and user-centered research, I designed Sahyog, an app to empower caregivers with educational resources, situational guidance, and community support. 
-    This project reflects my passion for using UX design to create impactful solutions that address real-world challenges.`,
-    imgSrc: '/static/images/sahyog-app.png',
-    slug: 'sahyog',
+    category: 'Passkeys Authentication',
+    title: 'Phishing Resistant MFA: Passkeys',
+    description: `From reshaping the developer panel to enhancing the complete website, I optimized the user experience for clarity and engagement. 
+    I took the lead in designing four key tools that empower users to integrate and understand passkeys across various platforms.`,
+    imgSrc: '/static/images/passkeys-project.png',
+    slug: 'passkeys-authentication',
   },
   {
     category: 'German Transport Services',
@@ -23,12 +23,12 @@ const projectsData: Project[] = [
     slug: 'deutsche-bahn-v2',
   },
   {
-    category: 'Passkeys Authentication',
-    title: 'Phishing Resistant MFA: Passkeys',
-    description: `From reshaping the developer panel to enhancing the complete website, I optimized the user experience for clarity and engagement. 
-    I took the lead in designing four key tools that empower users to integrate and understand passkeys across various platforms.`,
-    imgSrc: '/static/images/passkeys-project.png',
-    slug: 'passkeys-authentication',
+    category: 'Master Thesis',
+    title: "Sahyog: An app for Alzheimer's",
+    description: `Improving family caregiving for Alzheimer’s patients in India. Through competitor analysis and user-centered research, I designed Sahyog, an app to empower caregivers with educational resources, situational guidance, and community support. 
+    This project reflects my passion for using UX design to create impactful solutions that address real-world challenges.`,
+    imgSrc: '/static/images/sahyog-app.png',
+    slug: 'sahyog',
   },
   {
     category: 'Sustainability',
