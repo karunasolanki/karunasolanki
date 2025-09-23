@@ -38,18 +38,18 @@ const projectsData: Project[] = [
     slug: 'sustain-feed',
   },
   {
-    category: 'Web Design',
-    title: 'Kiva: Home Renovation Simplified',
-    description: `A streamlined platform to design, plan and build - all in one place`,
-    imgSrc: '/static/images/kiva.png',
-    slug: 'kiva',
-  },
-  {
     category: 'Visual Identity',
     title: 'Event Branding & Collateral',
     description: `Crafting the visual identity and on-site experience for tech conferences and seminars`,
     imgSrc: '/static/images/set-design.png',
     slug: 'event-branding',
+  },
+  {
+    category: 'Web Design',
+    title: 'Kiva: Home Renovation Simplified',
+    description: `A streamlined platform to design, plan and build - all in one place`,
+    imgSrc: '/static/images/kiva.png',
+    slug: 'kiva',
   },
 ]
 
