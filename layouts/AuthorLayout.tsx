@@ -21,7 +21,7 @@ export default function AuthorLayout({ children, content }: Props) {
       {/* Hero Section */}
       <div className="pb-8 text-center">
         <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl md:text-5xl dark:text-gray-100">
-          Design for People • Low-Code • AI Enthusiast
+          Design for People • Low-Code
         </h1>
       </div>
       {/* 2-Column Section */}
